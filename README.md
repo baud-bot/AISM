@@ -2,6 +2,8 @@
 
 An embedded safety system for motorcyclists built on the **Arduino Nano**. It detects nearby obstacles, dangerous lean angles, sudden movements, and possible crashes, then automatically sends an **SMS alert with a Google Maps link** to a predefined emergency contact.
 
+> 📌 **Note:** All on-screen messages (LCD) and SMS alerts are displayed in Spanish, as the project was originally developed for a Spanish-speaking audience. A Spanish → English translation table is available at the end of this document.
+
 Developed for the **CCTECH 3rd Edition 2026 Technology Fair**.
 
 ---
@@ -315,4 +317,29 @@ Team AISM — CCTECH 3rd Edition 2026
 
   - The Arduino community for its extensive documentation and examples
 
-<p align="center"> <b>🦈 AISM — Ride safe. Get help fast.</b> </p> ```
+---
+
+## 🌐 Display Messages (Spanish → English)
+
+The LCD and SMS alerts use Spanish messages. Here is a quick reference:
+
+| Spanish | English |
+|---|---|
+| `SEGURO` | Safe |
+| `! PRECAUCION !` | ! CAUTION ! |
+| `!! PELIGRO !!` | !! DANGER !! |
+| `!! CHOQUE !!` | !! CRASH !! |
+| `Enderezar moto` | Straighten the bike |
+| `Enviando SMS de alerta...` | Sending alert SMS... |
+| `SMS ENVIADO / Correcto!` | SMS SENT / Success! |
+| `SMS FALLO / Revisar senal` | SMS FAILED / Check signal |
+| `INC:XX°` | Tilt: XX° |
+| `I:XX D:XX A:XX` | L:XX R:XX B:XX (Left/Right/Back) |
+| `G` | Sudden turn |
+| `M` | Sudden movement |
+| `APAGADO` | OFF |
+
+
+
+
+<p align="center"> <b>🦈 AISM — Ride safe. Get help fast.</b> </p> 
