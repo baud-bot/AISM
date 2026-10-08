@@ -4,8 +4,6 @@
 
 Un sistema de seguridad embebido para motociclistas construido sobre el **Arduino Nano**. Detecta obstáculos cercanos, ángulos de inclinación peligrosos, movimientos bruscos y posibles choques, y luego envía automáticamente una **alerta por SMS con un enlace de Google Maps** a un contacto de emergencia predefinido.
 
-Desarrollado para la **Feria Tecnológica CCTECH 3ra Edición 2026**.
-
 ---
 
 ## ✨ Características
@@ -285,33 +283,11 @@ Al tocar el enlace se abre Google Maps en la ubicación del accidente. Si el GPS
 
    - Agregar una batería recargable de Li-ion integrada a la moto.
 
----
-
-## 👥 Autores
-
-# Equipo AISM — CCTECH 3ra Edición 2026
-
-  -  Cecilia D.
-
-  -  Raul B.
-
-  -  Giannina R.
-
-  -  Vannia D.
-
-  -  Maile Z.
-
  ---
 
-## 📄 Licencia
-
-Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+# Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 ##🙏 Agradecimientos
-
-  - Prof. Richar Gonzalez, por su asesoría y acompañamiento durante el proyecto.
-
-  -  CCTECH 2026, por la oportunidad de presentar este proyecto.
 
   -  Paul Stoffregen, por AltSoftSerial.
 
