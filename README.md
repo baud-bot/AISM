@@ -287,7 +287,7 @@ Tapping the link opens Google Maps at the location of the accident. If the GPS h
 
 # This project is released under the MIT License. See the "LICENSE" file for details.
 
-# 🙏 Acknowledgments
+## 🙏 Acknowledgments
 
   - Paul Stoffregen for AltSoftSerial
 
