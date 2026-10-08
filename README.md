@@ -132,30 +132,30 @@ This prevents power fluctuations from the GSM module from interfering with the u
 ## 🚀 Installation
 
 1. **Clone the repository:**
-   
-git clone https://github.com/yourusername/AISM.git
-cd AISM
 
-3. Install the required libraries using the Arduino Library Manager.
+       git clone https://github.com/yourusername/AISM.git
 
-4. Configure your emergency phone number in the source code:
+       cd AISM
 
-cpp
+2. Install the required libraries using the Arduino Library Manager.
 
-const char TELEFONO[] = "+595986333773";
+3. Configure your emergency phone number in the source code:
+
+       const char TELEFONO[] = "+595xxxxxxxxx";
 
 4. Adjust the detection thresholds if needed:
-cpp
 
-const float ACC_CHOQUE = 2.5;   // Crash acceleration threshold (g)
-const float ANG_CHOQUE = 60.0;  // Crash tilt threshold (degrees)
-const float ACC_ALERTA = 1.5;   // Sudden movement alert (g)
+       const float ACC_CHOQUE = 2.5;   // Crash acceleration threshold (g)
+   
+       const float ANG_CHOQUE = 60.0;  // Crash tilt threshold (degrees)
+   
+       const float ACC_ALERTA = 1.5;   // Sudden movement alert (g)
 
-5. Wire all components following the pinout table.
+6. Wire all components following the pinout table.
 
-6. Upload the sketch to the Arduino Nano.
+7. Upload the sketch to the Arduino Nano.
 
-7. Open the Serial Monitor at 9600 baud to observe real-time activity.
+8. Open the Serial Monitor at 9600 baud to observe real-time activity.
 
 ---
 
