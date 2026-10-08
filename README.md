@@ -6,8 +6,6 @@ An embedded safety system for motorcyclists built on the **Arduino Nano**. It de
 
 > 📌 **Note:** All on-screen messages (LCD) and SMS alerts are displayed in Spanish, as the project was originally developed for a Spanish-speaking audience. A Spanish → English translation table is available at the end of this document.
 
-Developed for the **CCTECH 3rd Edition 2026 Technology Fair**.
-
 ---
 
 ## ✨ Features
@@ -287,27 +285,9 @@ Tapping the link opens Google Maps at the location of the accident. If the GPS h
 
 -  Add a rechargeable Li-ion battery integrated into the motorcycle.
 
-## 👥 Authors
-
-Team AISM — CCTECH 3rd Edition 2026
-
-- Cecilia D.
-
-- Raul B.
-
-- Giannina R.
-
-- Vannia D.
-
-- Maile Z.
-
 # This project is released under the MIT License. See the "LICENSE" file for details.
 
 # 🙏 Acknowledgments
-
-  - Mr. Richar Gonzalez, for his advice and help
-
-  - CCTECH 2026 for the opportunity to present this project
 
   - Paul Stoffregen for AltSoftSerial
 
