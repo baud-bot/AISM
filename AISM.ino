@@ -1,6 +1,4 @@
-// ------------------------------ Feria Tecnologica CCTECH 3ra Edicion 2026 -------------------------------
 // ---------------------- "AISM" (Asistente Inteligente, Seguridad para Motociclistas) --------------------------
-// ---------------- Integrantes: Cecilia D. / Raul B. / Giannina R. / Vannia D. / Maile Z. ----------------
 
 // =======================================================
 
