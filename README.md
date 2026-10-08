@@ -285,8 +285,6 @@ Tapping the link opens Google Maps at the location of the accident. If the GPS h
 
 -  Add a rechargeable Li-ion battery integrated into the motorcycle.
 
-# This project is released under the MIT License. See the "LICENSE" file for details.
-
 ## 🙏 Acknowledgments
 
   - Paul Stoffregen for AltSoftSerial
@@ -296,6 +294,8 @@ Tapping the link opens Google Maps at the location of the accident. If the GPS h
   - Frank de Brabander for LiquidCrystal_I2C
 
   - The Arduino community for its extensive documentation and examples
+
+Developed for the **CCTECH 3rd Edition 2026 Technology Fair**.
 
 ---
 
@@ -319,6 +319,7 @@ The LCD and SMS alerts use Spanish messages. Here is a quick reference:
 | `M` | Sudden movement |
 | `APAGADO` | OFF |
 
+This project is released under the MIT License. See the "LICENSE" file for details.
 
 
 
