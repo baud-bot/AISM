@@ -285,8 +285,6 @@ Al tocar el enlace se abre Google Maps en la ubicación del accidente. Si el GPS
 
  ---
 
-# Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
-
 ##🙏 Agradecimientos
 
   -  Paul Stoffregen, por AltSoftSerial.
@@ -296,5 +294,9 @@ Al tocar el enlace se abre Google Maps en la ubicación del accidente. Si el GPS
   -  Frank de Brabander, por LiquidCrystal_I2C.
 
   -  La comunidad de Arduino, por su extensa documentación y ejemplos.
+
+Desarrollado para la **Feria Tecnologica CCTECH 3ra Edicion 2026**
+
+Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 <p align="center"> <b>🦈 AISM — Conduce seguro. Recibe ayuda rápido.</b> </p> ```
