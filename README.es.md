@@ -131,33 +131,29 @@ Esto evita que las fluctuaciones de energía del módulo GSM interfieran con el 
 
 1. **Clona el repositorio:**
 
-   ```bash
+       git clone https://github.com/tu-usuario/AISM.git
 
-git clone https://github.com/tu-usuario/AISM.git
+       cd AISM
 
-cd AISM
+2. Instala las librerías requeridas con el Gestor de Librerías del Arduino.
 
-1. Instala las librerías requeridas con el Gestor de Librerías del Arduino.
+3. Configura tu número de emergencia en el código fuente:
+ 
+       const char TELEFONO[] = "+595XXXXXXXXX";
 
-2. Configura tu número de emergencia en el código fuente:
+4. Ajusta los umbrales de detección si es necesario:
 
-    cpp
+       const float ACC_CHOQUE = 2.5;   // Umbral de choque (g)
    
-    const char TELEFONO[] = "+595XXXXXXXXX";
+       const float ANG_CHOQUE = 60.0;  // Umbral de inclinación (grados)
+   
+       const float ACC_ALERTA = 1.5;   // Umbral de movimiento brusco (g)
 
-3. Ajusta los umbrales de detección si es necesario:
+5. Conecta todos los componentes siguiendo la tabla de pines.
 
-   cpp
+6. Carga el sketch en el Arduino Nano.
 
-    const float ACC_CHOQUE = 2.5;   // Umbral de choque (g)
-    const float ANG_CHOQUE = 60.0;  // Umbral de inclinación (grados)
-    const float ACC_ALERTA = 1.5;   // Umbral de movimiento brusco (g)
-
-4. Conecta todos los componentes siguiendo la tabla de pines.
-
-5. Carga el sketch en el Arduino Nano.
-
-6. Abre el Monitor Serie a 9600 baudios para observar la actividad.
+7. Abre el Monitor Serie a 9600 baudios para observar la actividad.
 
 ---
 
@@ -205,13 +201,20 @@ Un choque se detecta cuando ambas condiciones ocurren simultáneamente:
 
 ## Niveles de alerta
 
-Condición	Buzzer= LCD
+# Condición	Buzzer= LCD
+
 Objeto a menos de 25 cm	800 Hz =	! PRECAUCION !
+
 Objeto a menos de 12.5 cm	1000 Hz =	!! PELIGRO !!
+
 Inclinación mayor a 30°	800 Hz =	! PRECAUCION !
+
 Inclinación mayor a 60°	1000 Hz =	!! PELIGRO !!
+
 Choque detectado	1500 Hz =	!! CHOQUE !! 5s
+
 SMS enviado	Silencio =	SMS ENVIADO / Correcto!
+
 SMS falló	Silencio =	SMS FALLO / Revisar senal
 
 ---
@@ -221,27 +224,34 @@ SMS falló	Silencio =	SMS FALLO / Revisar senal
 Cuando se confirma un choque, el sistema envía un SMS con el siguiente formato:
 text
 
-AUXILIO! https://maps.google.com/?q=-25.268281,-57.509490
+    AUXILIO! https://maps.google.com/?q=-25.268281,-57.509490
 
 Al tocar el enlace se abre Google Maps en la ubicación del accidente. Si el GPS no tiene fix al momento de enviar, el SMS dirá:
-text
 
-AUXILIO! GPS sin fix
+
+    AUXILIO! GPS sin fix
 
 ---
 
 ## 🛠 Solución de Problemas
 
-Síntoma	Causa Probable	Solución Sugerida
-Falla la carga: "programmer is not responding"	Fluctuación de alimentación del SIM900	Desconecta la fuente del SIM900 durante la carga
-El LCD no muestra nada	Dirección I2C incorrecta o contraste	Prueba 0x3F; ajusta el potenciómetro
-El buzzer suena distorsionado	Conflicto de timer con SoftwareSerial	Usa AltSoftSerial para el GPS (D8/D9)
-El GSM no se registra	Señal 2G débil o modo de banda inválido	Reinicia el módulo; prueba en zona con buena cobertura
-CSQ = 0	Sin señal	Muévete a un área abierta; revisa la antena
-AT+CBAND? → INVALID_BAND_MODE	Problema de firmware en algunos SIM900	Reinicia el módulo; puede requerir actualización
-GPS Chars = 0	Conexión o baud rate incorrectos	Verifica TX → D8 y RX → D9; prueba 38400
-GPS recibe datos pero sin fix	Sin visibilidad al cielo	Ve al exterior; espera 1–5 minutos
-SMS no enviado (+CMS ERROR: 500)	Señal débil	Muévete a una ubicación con CSQ ≥ 5
+- Falla la carga: "programmer is not responding", Fluctuación de alimentación del SIM900;	Desconecta la fuente del SIM900 durante la carga
+
+- El LCD no muestra nada, Dirección I2C incorrecta o contraste;	Prueba 0x3F; ajusta el potenciómetro
+
+- El buzzer suena distorsionado	Conflicto de timer con SoftwareSerial;	Usa AltSoftSerial para el GPS (D8/D9)
+
+- El GSM no se registra	Señal 2G débil o modo de banda inválido	Reinicia el módulo; prueba en zona con buena cobertura
+
+- CSQ = 0, Sin señal; Muévete a un área abierta y/o revisa la antena
+
+- AT+CBAND? → INVALID_BAND_MODE, Problema de firmware en algunos SIM900;	Reinicia el módulo; puede requerir actualización
+
+- GPS Chars = 0	Conexión o baud rate incorrectos;	Verifica TX → D8 y RX → D9; prueba 38400
+
+- GPS recibe datos pero sin fix, Sin visibilidad al cielo;	Ve al exterior; espera 1–5 minutos
+
+- SMS no enviado (+CMS ERROR: 500), Señal débil;	Muévete a una ubicación con CSQ ≥ 5
 
 ## ⚠️ Limitaciones Conocidas
 
@@ -299,7 +309,7 @@ Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE pa
 
 ##🙏 Agradecimientos
 
-  - Sr. Richar Gonzalez, por su asesoría y acompañamiento durante el proyecto.
+  - Prof. Richar Gonzalez, por su asesoría y acompañamiento durante el proyecto.
 
   -  CCTECH 2026, por la oportunidad de presentar este proyecto.
 
