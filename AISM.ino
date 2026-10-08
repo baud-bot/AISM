@@ -37,7 +37,7 @@ const float ALPHA_GIRO = 0.35;
 const float ALPHA_DIST = 0.15;
 
 // ---------------- Configuraciones ----------------
-const char TELEFONO[] = "+595XXXXXX"; // Numero de Telefono del Destinatario
+const char TELEFONO[] = "+595xxxxxx"; // Numero de Telefono del Destinatario
 const float ACC_CHOQUE = 2.5;
 const float ANG_CHOQUE = 65.0;
 const float ANG_RECUP  = 25.0;
