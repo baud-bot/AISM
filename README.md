@@ -297,6 +297,8 @@ Tapping the link opens Google Maps at the location of the accident. If the GPS h
 
 Developed for the **CCTECH 3rd Edition 2026 Technology Fair**.
 
+This project is released under the MIT License. See the "LICENSE" file for details.
+
 ---
 
 ## 🌐 Display Messages (Spanish → English)
@@ -318,9 +320,5 @@ The LCD and SMS alerts use Spanish messages. Here is a quick reference:
 | `G` | Sudden turn |
 | `M` | Sudden movement |
 | `APAGADO` | OFF |
-
-This project is released under the MIT License. See the "LICENSE" file for details.
-
-
 
 <p align="center"> <b>🦈 AISM — Ride safe. Get help fast.</b> </p> 
