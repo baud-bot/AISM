@@ -1,5 +1,7 @@
 # 🦈 AISM — Intelligent Motorcycle Safety Assistant
 
+**🌐 Languages:** **English** · [Español](README.es.md)
+
 An embedded safety system for motorcyclists built on the **Arduino Nano**. It detects nearby obstacles, dangerous lean angles, sudden movements, and possible crashes, then automatically sends an **SMS alert with a Google Maps link** to a predefined emergency contact.
 
 > 📌 **Note:** All on-screen messages (LCD) and SMS alerts are displayed in Spanish, as the project was originally developed for a Spanish-speaking audience. A Spanish → English translation table is available at the end of this document.
@@ -305,7 +307,7 @@ Team AISM — CCTECH 3rd Edition 2026
 
 # 🙏 Acknowledgments
 
-  - Mrs. Richar Gonzalez, for his advice and help
+  - Mr. Richar Gonzalez, for his advice and help
 
   - CCTECH 2026 for the opportunity to present this project
 
