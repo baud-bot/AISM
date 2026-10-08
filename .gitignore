@@ -1,0 +1,33 @@
+# ---- Arduino ----
+build/
+*.hex
+*.elf
+*.bin
+*.map
+*.d
+*.o
+*.a
+*.lst
+
+# ---- IDE ----
+.arduino15/
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Sistema Operativo ----
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# ---- Temporales ----
+*.tmp
+*.bak
+*.swp
+*~
+
+# ---- Datos sensibles ----
+config.h
+secrets.h
