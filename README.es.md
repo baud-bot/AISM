@@ -139,7 +139,7 @@ Esto evita que las fluctuaciones de energía del módulo GSM interfieran con el 
 
 3. Configura tu número de emergencia en el código fuente:
  
-       const char TELEFONO[] = "+595XXXXXXXXX";
+       const char TELEFONO[] = "+595xxxxxx";
 
 4. Ajusta los umbrales de detección si es necesario:
 
@@ -224,7 +224,7 @@ SMS falló	Silencio =	SMS FALLO / Revisar senal
 Cuando se confirma un choque, el sistema envía un SMS con el siguiente formato:
 text
 
-    AUXILIO! https://maps.google.com/?q=-25.268281,-57.509490
+    AUXILIO! https://maps.google.com/?q=-xx.xxxxxx,-xx.xxxxxx
 
 Al tocar el enlace se abre Google Maps en la ubicación del accidente. Si el GPS no tiene fix al momento de enviar, el SMS dirá:
 
