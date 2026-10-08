@@ -224,14 +224,12 @@ If the alert is not cancelled within 5 seconds, an SMS is sent with the last val
 # 📱 SMS Format
 
 When a crash is confirmed, the system sends an SMS in the following format:
-text
 
-AUXILIO! https://maps.google.com/?q=-25.268281,-57.509490
+    AUXILIO! https://maps.google.com/?q=-xx.xxxxxx,-xx.xxxxxx
 
 Tapping the link opens Google Maps at the location of the accident. If the GPS has no fix at the moment of sending, the SMS will read:
-text
 
-AUXILIO! GPS sin fix
+    AUXILIO! GPS sin fix
 
 ---
 
